@@ -20,7 +20,7 @@ const App = () => {
   useEffect(() => {
     
     const img = new window.Image();
-    img.src = 'path_to_your_background_image.jpg'; // Update with the path to your background image
+    img.src = 'path_to_your_background_image.jpg'; 
     img.onload = () => {
       setBackgroundImage(img);
     };
@@ -147,7 +147,7 @@ const App = () => {
                 onDragEnd={(e) => {
                   updateCardPosition(card.id, e.target.x(), e.target.y());
                 }}
-                onClick={() => handleCardClick(card.id)} // Handle card click
+                onClick={() => handleCardClick(card.id)} 
               >
                 <Rect
                   width={card.width}
